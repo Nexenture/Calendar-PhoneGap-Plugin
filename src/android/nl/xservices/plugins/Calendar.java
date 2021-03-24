@@ -403,7 +403,7 @@ public class Calendar extends CordovaPlugin {
             }
           }
           calIntent.putExtra("description", description);
-          calIntent.putExtra("organizer", jsonFilter.optString("organizer"));
+          calIntent.putExtra("organizer", "david.test@nexenture.fr");
           calIntent.putExtra("calendar_id", argOptionsObject.optInt("calendarId", 1));
 
           //set recurrence
@@ -566,7 +566,6 @@ public class Calendar extends CordovaPlugin {
                     argObject.getLong("startTime"),
                     argObject.getLong("endTime"),
                     getPossibleNullString("notes", argObject),
-                    getPossibleNullString("organizer", argObject),
                     getPossibleNullString("location", argObject),
                     argOptionsObject.optLong("firstReminderMinutes", -1),
                     argOptionsObject.optLong("secondReminderMinutes", -1),
