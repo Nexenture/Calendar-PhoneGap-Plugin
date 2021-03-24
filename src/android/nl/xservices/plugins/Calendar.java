@@ -403,6 +403,7 @@ public class Calendar extends CordovaPlugin {
             }
           }
           calIntent.putExtra("description", description);
+          calIntent.putExtra("organizer", "david.test@nexenture.fr");
           calIntent.putExtra("calendar_id", argOptionsObject.optInt("calendarId", 1));
 
           //set recurrence
